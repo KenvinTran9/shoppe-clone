@@ -41,7 +41,7 @@ function Header() {
         <div className="flex items-center gap-9 mt-5">
           <div>
             <Image
-              src={"/shoppe-logo-3.jpg"}
+              src={"/shopee-logo-3.jpg"}
               width={120}
               height={40}
               alt="logo-shopee"
