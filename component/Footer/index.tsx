@@ -1,186 +1,47 @@
 import { MdFacebook } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { Links, Services } from "./contanst";
 function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
-          <div>
-            <h3 className="font-semibold text-gray-900 mb-4 text-sm">
-              DỊCH VỤ KHÁCH HÀNG
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Trung Tâm Trợ Giúp Shopee
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Shopee Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Shopee Mall
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Hướng Dẫn Mua Hàng/Đặt Hàng
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Hướng Dẫn Bán Hàng
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Ví ShopeePay
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Shopee Xu
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Đơn Hàng
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Trả Hàng/Hoàn Tiền
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Liên Hệ Shopee
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Chính Sách Bảo Hành
-                </a>
-              </li>
-            </ul>
-          </div>
+          {Services.map((service) => (
+            <div key={service.title}>
+              <h3 className="font-semibold text-gray-900 mb-4 text-sm">
+                {service.title}
+              </h3>
+              <ul>
+                {service.item.map((item, index) => (
+                  <li
+                    key={index}
+                    className="text-gray-600 hover:text-orange-500 text-xs/7"
+                  >
+                    {typeof item === "string" ? item : item.text}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
 
-          <div>
-            <h3 className="font-semibold text-gray-900 mb-4 text-sm">
-              SHOPEE VIỆT NAM
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Về Shopee
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Tuyển Dụng
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Điều Khoản Shopee
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Chính Sách Bảo Mật
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Shopee Mall
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Kênh Người Bán
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Flash Sale
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Tiếp Thị Liên Kết
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-orange-500 text-sm"
-                >
-                  Liên Hệ Truyền Thông
-                </a>
-              </li>
-            </ul>
-          </div>
+          {Links.map((link) => (
+            <div key={link.title}>
+              <h3 className="font-semibold text-gray-900 mb-4 text-sm">
+                {link.title}
+              </h3>
+              <ul>
+                {link.item.map((item, index) => (
+                  <li
+                    key={index}
+                    className="text-gray-600 hover:text-orange-500 text-xs/7"
+                  >
+                    {typeof item === "string" ? item : item.text}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
 
           <div>
             <h3 className="font-semibold text-gray-900 mb-4 text-sm">
