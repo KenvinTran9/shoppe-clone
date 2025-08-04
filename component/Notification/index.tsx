@@ -9,7 +9,7 @@ function Notification() {
         <Carousel withIndicators height={350}>
           <CarouselSlide>
             <Image
-              src="/Caroseul1.jpg"
+              src="/Caroseul/Caroseul1.jpg"
               alt="Slide 1"
               width={800}
               height={350}
@@ -43,7 +43,7 @@ function Notification() {
             src="/Caroseul/Extra.jpg"
             alt="Fixed 1"
             height={800}
-            width={350}
+            width={400}
             className="object-cover"
           />
         </div>
@@ -52,7 +52,7 @@ function Notification() {
             src="/Caroseul/Sieusale.jpg"
             alt="Fixed 2"
             height={800}
-            width={350}
+            width={400}
             className="object-cover"
           />
         </div>
