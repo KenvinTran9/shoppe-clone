@@ -5,7 +5,6 @@ import Image from "next/image";
 function Notification() {
   return (
     <div className="grid grid-cols-3 mx-auto">
-      {/* Cột trái: Carousel chiếm 2 cột */}
       <div className="col-span-2">
         <Carousel withIndicators height={350}>
           <CarouselSlide>
@@ -38,7 +37,6 @@ function Notification() {
         </Carousel>
       </div>
 
-      {/* Cột phải: Hai ảnh nhỏ dọc */}
       <div className="flex flex-col gap-2">
         <div className="relative ">
           <Image
