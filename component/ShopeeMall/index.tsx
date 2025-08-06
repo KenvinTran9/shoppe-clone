@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Sales } from "./constant";
 function ShopeeMall() {
   return (
-    <div className="bg-white">
+    <div className="bg-white title">
       <div className="flex justify-between mx-auto">
         <div className="flex gap-2">
           <h1>SHOPEE MALL</h1>
