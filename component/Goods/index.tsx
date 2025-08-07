@@ -18,7 +18,7 @@ function Good() {
               <div>
                 <h2><span className="text-xs bg-red-500 text-white px-1 py-0.5 rounded">yêu thích</span> {item.title}</h2>
                 <span className="border-red-400 border text-red-500 p-0.5 rounded text-xs">{item.badges.join(", ")}</span>
-                <p className="text-red-500 flex">đ<p>{item.price.toLocaleString("vi-VN")}</p></p>
+                <span className="text-red-500 flex">đ<p>{item.price.toLocaleString("vi-VN")}</p></span>
               </div>
             </div>
           </div>

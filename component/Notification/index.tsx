@@ -4,7 +4,7 @@ import { Sales } from "./constant";
 
 function Notification() {
   return (
-    <div className="bg-white title m-6n w-full">
+    <div className="bg-white title w-full mt-6">
       <div className="flex title gap-4">
         <div className="flex-1">
           <Carousel withIndicators>
@@ -40,9 +40,9 @@ function Notification() {
       </div>
       <div>
         <div className="grid grid-cols-6 items-center mt-6 mb-4 p-2">
-          {Sales.map((sale) => (
+          {Sales.map((sale, index) => (
             <div
-              key={sale.title}
+              key={`${sale.title}-${index}`}
               className="flex flex-col items-center justify-center text-center"
             >
               <div>

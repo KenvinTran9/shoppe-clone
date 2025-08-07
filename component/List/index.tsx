@@ -3,16 +3,16 @@ import Image from "next/image";
 
 function List() {
   return (
-    <div className="w-[90%] mx-auto py-6 bg-white rounded">
+    <div className="title py-6 bg-white rounded">
 
-      <h3 className="text-base font-semibold text-gray-800 mb-6">
+      <h3 className="text-base font-semibold text-gray-800 mb-6 ">
         DANH MỤC
       </h3>
-      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-10 gap-y-6">
+      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-10 gap-y-6 border-b border-t">
         {Categories.map((category) => (
           <div
             key={category.title}
-            className="flex flex-col items-center justify-center text-center border-b border-gray-200 border-r"
+            className="flex flex-col items-center justify-center text-center border-r"
           >
             <div>
               <Image
