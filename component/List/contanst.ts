@@ -83,3 +83,9 @@ export const Categories = [
     }
 
 ]
+export const Sales = [
+    {
+        image: "/List/magiamgia.png",
+        title: "Mã Giảm Giá",
+    }
+]

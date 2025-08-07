@@ -1,4 +1,4 @@
-import { Categories } from "./contanst";
+import { Categories} from "./contanst";
 import Image from "next/image";
 
 function List() {

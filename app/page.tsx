@@ -6,7 +6,7 @@ import Search from "@/component/Search";
 import Good from "@/component/Goods";
 export default function Home() {
   return (
-    <main className="bg-gray-50">
+    <main className="bg-gray-100">
       <Notification />
       <List />
       <ShopeeMall />
